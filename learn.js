@@ -1,8 +1,14 @@
 $(document).ready(function() {
     'use strict';
-    //CONTROL FLOW
-    let theNumber = Number(prompt("pick a number"));
-    console.log("your number is " + theNumber * theNumber);
+    const colors = ["red", "blue", "green", "yellow"];
+    const input = prompt("enter a number");
+    const index = parseInt(input);
+
+    if(index >= 0 && index < colors.length) {
+      const coloring = colors[index];
+      console.log(`your number is for: ${coloring}`);
+    } else
+    console.error("You Entered Out Of Number");
     
  
   
